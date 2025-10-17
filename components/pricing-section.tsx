@@ -40,7 +40,7 @@ const plans = [
       "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Gemini_Generated_Image_ivhuevivhuevivhu-ugPzewkBekfEmXSKDbkJPbX5Cu7mBT.png",
     badge: "Mais Vendido",
     features: [
-      "Até 35 imagens",
+      "Até 30 imagens",
       "Edição detalhada",
       "Suporte prioritário",
       "Entrega em até 5 dias úteis",
