@@ -58,7 +58,7 @@ export function HeroSection() {
               size="lg"
               className="text-lg px-8 py-6 bg-white text-[var(--boobie-purple)] hover:bg-white/90 hover:scale-105 transition-all duration-300 shadow-2xl font-semibold"
             >
-              Quero meu pack — R$8,90
+              Quero meu pack — R$9,90
             </Button>
 
             <p className="text-sm text-white/80">Entrega digital imediata • Pagamento seguro via PIX ou cartão</p>
