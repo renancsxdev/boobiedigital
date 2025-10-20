@@ -21,7 +21,7 @@ const plans = [
     ],
     buttonText: "Comprar Agora",
     popular: false,
-    paymentLink: "https://go.tribopay.com.br/tdx1rtdxbe",
+    paymentLink: "https://pay.cakto.com.br/ayrkyt7_611619",
   },
   {
     name: "Pack Plus",
@@ -37,7 +37,7 @@ const plans = [
     ],
     buttonText: "Comprar Agora",
     popular: false,
-    paymentLink: "https://go.tribopay.com.br/ohgmbsqa53",
+    paymentLink: "https://pay.cakto.com.br/32gr76a_614294",
   },
   {
     name: "Pack Premium",
@@ -54,7 +54,7 @@ const plans = [
     ],
     buttonText: "Comprar Agora",
     popular: true,
-    paymentLink: "https://go.tribopay.com.br/ic4cnzh0ni",
+    paymentLink: "https://pay.cakto.com.br/asgop4t_614312",
   },
 ]
 
