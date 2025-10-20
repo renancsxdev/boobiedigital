@@ -4,7 +4,7 @@ const faqs = [
   {
     question: "Como faço minha compra?",
     answer:
-      "A compra é feita diretamente pelo WhatsApp! Entre em contato conosco e faremos todo o processo de forma rápida e segura.",
+      "A compra é feita diretamente pelo checkout! Entre em contato conosco e faremos todo o processo de forma rápida e segura.",
   },
   {
     question: "Como envio minhas fotos?",
