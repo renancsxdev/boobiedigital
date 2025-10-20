@@ -45,6 +45,17 @@ export default function RootLayout({
             `,
           }}
         />
+
+        {/* Script do UTMify */}
+        <Script
+          id="utmify-script"
+          src="https://cdn.utmify.com.br/scripts/utms/latest.js"
+          data-utmify-prevent-xcod-sck=""
+          data-utmify-prevent-subids=""
+          async
+          defer
+          strategy="afterInteractive"
+        />
       </head>
       <body className={`${poppins.variable} font-sans antialiased`}>
         {children}
