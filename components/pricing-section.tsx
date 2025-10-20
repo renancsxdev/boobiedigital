@@ -3,52 +3,58 @@
 import { useEffect, useRef, useState } from "react"
 import { Button } from "@/components/ui/button"
 import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from "@/components/ui/card"
-import { Check, MessageCircle } from "lucide-react"
+import { Check } from "lucide-react"
 import Image from "next/image"
 
 const plans = [
   {
     name: "Pack Start",
-    price: "R$8,90",
+    price: "R$9,90",
     iconImage:
       "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Gemini_Generated_Image_dahqwdahqwdahqwd-AbtJ0zZx7q3GWbyeC3OdXJD8Mx2oOT.png",
     badge: "Comece aqui",
-    features: ["10 imagens transformadas em arte digital", "Entrega digital (via e-mail ou drive)", "Prazo: até 48h"],
-    buttonText: "Comprar no WhatsApp",
+    features: [
+      "10 imagens transformadas em arte Boobie Goods",
+      "Envie suas fotos pelo WhatsApp",
+      "Receba as artes via e-mail",
+      "Prazo: até 48h",
+    ],
+    buttonText: "Comprar Agora",
     popular: false,
-    whatsappLink: "https://wa.me/5511978478108?text=Ol%C3%A1%2C%20quero%20comprar%20o%20Pack%20Start",
+    paymentLink: "https://pay.cakto.com.br/ayrkyt7_611619",
   },
   {
     name: "Pack Plus",
-    price: "R$15,50",
+    price: "R$16,90",
     iconImage:
       "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Gemini_Generated_Image_y57bhyy57bhyy57b-RpieWKfMWQAcwNnty5yKfUC8blPtkZ.png",
     badge: null,
     features: [
-      "20 imagens personalizadas",
-      "Efeito artístico à escolha (aquarela, retrô, cartoon)",
+      "20 imagens estilo Boobie Goods",
+      "Envie suas fotos pelo WhatsApp",
+      "Receba as artes via e-mail",
       "Entrega em até 72h",
     ],
-    buttonText: "Comprar no WhatsApp",
+    buttonText: "Comprar Agora",
     popular: false,
-    whatsappLink: "https://wa.me/5511978478108?text=Ol%C3%A1%2C%20quero%20comprar%20o%20Pack%20Plus",
+    paymentLink: "https://pay.cakto.com.br/32gr76a_614294",
   },
   {
     name: "Pack Premium",
-    price: "R$27,99",
+    price: "R$26,80",
     iconImage:
       "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Gemini_Generated_Image_ivhuevivhuevivhu-ugPzewkBekfEmXSKDbkJPbX5Cu7mBT.png",
     badge: "Mais Vendido",
     features: [
-      "Até 30 imagens",
-      "Edição detalhada",
-      "Suporte prioritário",
+      "Até 25 imagens + 2 Bônus",
+      "Envie suas fotos pelo WhatsApp",
+      "Receba as artes via e-mail",
+      "Suporte prioritário 24h",
       "Entrega em até 5 dias úteis",
-      "Suas crianças vão amar pintar a família",
     ],
-    buttonText: "Comprar no WhatsApp",
+    buttonText: "Comprar Agora",
     popular: true,
-    whatsappLink: "https://wa.me/5511978478108?text=Ol%C3%A1%2C%20quero%20comprar%20o%20Pack%20Premium",
+    paymentLink: "https://pay.cakto.com.br/asgop4t_614312",
   },
 ]
 
@@ -73,8 +79,8 @@ export function PricingSection() {
     return () => observer.disconnect()
   }, [])
 
-  const handleWhatsAppPurchase = (whatsappLink: string) => {
-    window.open(whatsappLink, "_blank")
+  const handlePurchase = (paymentLink: string) => {
+    window.open(paymentLink, "_blank")
   }
 
   return (
@@ -129,7 +135,7 @@ export function PricingSection() {
 
                 <CardFooter>
                   <Button
-                    onClick={() => handleWhatsAppPurchase(plan.whatsappLink)}
+                    onClick={() => handlePurchase(plan.paymentLink)}
                     className={`w-full ${
                       plan.popular
                         ? "bg-gradient-to-r from-[#ff9ec4] to-[#b794f6] text-white hover:opacity-90 shadow-lg"
@@ -137,7 +143,6 @@ export function PricingSection() {
                     } transition-all duration-300 font-semibold hover:scale-105`}
                     size="lg"
                   >
-                    <MessageCircle className="mr-2 h-5 w-5" />
                     {plan.buttonText}
                   </Button>
                 </CardFooter>
