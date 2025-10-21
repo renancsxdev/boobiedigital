@@ -1,14 +1,7 @@
 "use client"
 
-import { Sparkles } from "lucide-react"
+import { Sparkles, ArrowRight } from "lucide-react"
 import { useEffect, useRef } from "react"
-
-const exampleArtImages = [
-  "/cute-colorful-unicorn-with-rainbow-mane-and-stars-.jpg",
-  "/colorful-teddy-bear-with-golden-crown-hearts-stars.jpg",
-  "/simple-robot-character-outline.jpg",
-  "/black-and-white-outline-coloring-book-style-cute-r.jpg",
-]
 
 export function PresentationSection() {
   const sectionRef = useRef<HTMLElement>(null)
@@ -59,21 +52,59 @@ export function PresentationSection() {
           </p>
         </div>
 
-        <div className="mt-12 grid grid-cols-2 md:grid-cols-4 gap-4">
-          {exampleArtImages.map((image, i) => (
-            <div
-              key={i}
-              className="aspect-square bg-gradient-to-br from-pink-100 to-purple-100 rounded-2xl overflow-hidden group cursor-pointer"
-            >
-              <div className="w-full h-full flex items-center justify-center transition-transform duration-500 group-hover:scale-110">
+        <div className="mt-16 max-w-5xl mx-auto">
+          <h3 className="text-2xl md:text-3xl font-bold mb-8 text-gray-800">Veja a Transformação ✨</h3>
+
+          <div className="flex flex-col md:flex-row items-center justify-center gap-6 md:gap-8">
+            {/* Before Image */}
+            <div className="relative group flex-1 w-full max-w-md">
+              <div className="absolute -top-4 left-1/2 -translate-x-1/2 z-10">
+                <span className="inline-block px-6 py-2 bg-gray-800 text-white text-sm font-bold rounded-full shadow-lg">
+                  ANTES
+                </span>
+              </div>
+              <div className="relative aspect-[3/4] rounded-3xl overflow-hidden shadow-2xl border-4 border-white">
                 <img
-                  src={image || "/placeholder.svg"}
-                  alt={`Arte exemplo ${i + 1}`}
-                  className="w-full h-full object-cover"
+                  src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/img1-AFGBUVNDG8x4SMyUgkOIfJnOBLL8sj.jpg"
+                  alt="Foto original"
+                  className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
                 />
               </div>
             </div>
-          ))}
+
+            {/* Arrow Indicator */}
+            <div className="flex items-center justify-center">
+              <div className="w-16 h-16 md:w-20 md:h-20 rounded-full bg-gradient-to-r from-pink-400 to-purple-500 flex items-center justify-center shadow-lg animate-pulse">
+                <ArrowRight className="w-8 h-8 md:w-10 md:h-10 text-white rotate-90 md:rotate-0" />
+              </div>
+            </div>
+
+            {/* After Image */}
+            <div className="relative group flex-1 w-full max-w-md">
+              <div className="absolute -top-4 left-1/2 -translate-x-1/2 z-10">
+                <span className="inline-block px-6 py-2 bg-gradient-to-r from-pink-500 to-purple-600 text-white text-sm font-bold rounded-full shadow-lg">
+                  DEPOIS
+                </span>
+              </div>
+              <div className="relative aspect-[3/4] rounded-3xl overflow-hidden shadow-2xl border-4 border-pink-200">
+                <img
+                  src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/img2-vuZ1pnk8DAwILG5RaadZLN1Wptta61.png"
+                  alt="Arte Boobie Digital"
+                  className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
+                />
+              </div>
+            </div>
+          </div>
+
+          {/* Description */}
+          <div className="mt-10 p-6 bg-gradient-to-r from-pink-50 to-purple-50 rounded-2xl border-2 border-pink-200">
+            <p className="text-lg font-medium text-gray-800">
+              🎨 Sua foto se transforma em uma linda ilustração estilo Boobie Goods!
+            </p>
+            <p className="text-sm text-gray-600 mt-2">
+              Perfeito para presentes, decoração ou simplesmente guardar suas memórias de forma única
+            </p>
+          </div>
         </div>
       </div>
     </section>
