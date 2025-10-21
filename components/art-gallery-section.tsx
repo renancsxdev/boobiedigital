@@ -23,6 +23,12 @@ const artExamples = [
     before: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/ex5-PvxrQw8ZUSKX4jXlcaiknn6QVsJilx.png",
     after: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/ex6-mrw3xyGuoDhjQXIUUcXQzoqobjb4Pn.png",
   },
+  {
+    id: 4,
+    title: "Transformação 4",
+    before: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-wEtNNVXbHazrQwEzRjueARq6zLwKn9.png",
+    after: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-Z6pgRavXcIgmibjDz8dPm0rP5rKkFQ.png",
+  },
 ]
 
 export function ArtGallerySection() {
