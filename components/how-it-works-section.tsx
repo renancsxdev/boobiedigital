@@ -10,7 +10,7 @@ const steps = [
     icon: Upload,
     title: "Envie suas fotos",
     description:
-      "Clique no botão acima e envie suas imagens favoritas. Podem ser fotos pessoais, de viagens, pets ou qualquer momento especial.",
+      "Você envia suas fotos pelo Whatsapp. Podem ser fotos pessoais, de viagens, pets ou qualquer momento especial.",
   },
   {
     number: "2",
