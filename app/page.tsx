@@ -14,10 +14,10 @@ export default function Home() {
     <main className="min-h-screen bg-white fluid-bg">
       <Header />
       <PresentationSection />
-       <ArtGallerySection />
       <HowItWorksSection />
-      <TestimonialsSection />
+      <ArtGallerySection />
       <PricingSection />
+      <TestimonialsSection />
       <FinalCTASection />
       <FAQSection />
       <SecuritySealSection />
